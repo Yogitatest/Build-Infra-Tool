@@ -3,6 +3,12 @@ provider "google" {
   region  = var.location
 }
 
+provider "google-beta" {
+  project = var.project
+  region  = var.region
+}
+
+
 resource "google_container_cluster" "demo-cluster" {
   name                     = var.cluster_name
   location                 = var.location
