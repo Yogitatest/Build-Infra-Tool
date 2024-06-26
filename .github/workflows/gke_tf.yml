@@ -54,6 +54,7 @@ jobs:
           cluster_name: demo-cluster
           location: us-east1
           credentials: ${{ secrets.GCP_SECRET }}
+          project_id: expanded-port-427419-h3
       
       - id: get-pods
         run: kubectl get pods -A 
