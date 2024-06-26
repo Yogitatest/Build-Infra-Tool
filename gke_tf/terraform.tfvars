@@ -1,6 +1,6 @@
 cluster_name           = "demo-cluster"
 location               = "us-east1"
-project_id             = "test-demo-project"
+project_id             = "expanded-port-427419-h3"
 subnetwork             = "default"
 istio_enabled          = "false"
 istio_auth             = "AUTH_MUTUAL_TLS"
