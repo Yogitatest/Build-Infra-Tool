@@ -15,12 +15,6 @@ jobs:
         ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
     name: "Terraform"
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        working-directory: [gke_tf, worker_nodes]
-    defaults:
-      run:
-        working-directory: ${{ matrix.working-directory }}
     
     steps:
       - name: Checkout
