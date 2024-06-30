@@ -15,7 +15,7 @@ resource "google_container_cluster" "demo-cluster" {
   project                  = var.project_id
   subnetwork               = var.subnetwork
   initial_node_count       = 1
-  remove_default_node_pool = false
+  remove_default_node_pool = true
 }
 
 resource "google_container_node_pool" "demo_nodes" {
