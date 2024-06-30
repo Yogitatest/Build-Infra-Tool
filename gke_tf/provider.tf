@@ -1,7 +1,7 @@
 terraform {
 
   backend "gcs" {
-    bucket = "tf-demo-state"
+    bucket = "tf-demo-test"
   }
 
   required_version = ">= 0.12.26"
