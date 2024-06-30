@@ -1,4 +1,4 @@
-cluster_name           = "demo-cluster"
+cluster_name           = "demo-cluster2"
 location               = "us-east1"
 project_id             = "expanded-port-427419-h3"
 subnetwork             = "default"
