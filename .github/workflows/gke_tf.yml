@@ -43,19 +43,4 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -auto-approve
   
-  gke-cluster:
-    name: gke-cluster
-    runs-on: ubuntu-latest
-    needs: terraform
-    steps:    
-      - id: get-credentials
-        uses: google-github-actions/get-gke-credentials@main
-        with:
-          cluster_name: demo-cluster
-          location: us-east1
-          credentials: ${{ secrets.GCP_SECRET }}
-          project_id: expanded-port-427419-h3
-      
-      - id: get-pods
-        run: kubectl get pods -A 
 
